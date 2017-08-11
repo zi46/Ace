@@ -55,7 +55,7 @@ public class PriorityQueueController {
     return workOrderService.getOrderIdIndex(orderId);
   }
 
-  @RequestMapping(value = "/averageWaitTime", method = POST)
+  @RequestMapping(value = "/averageWaitTime", method = GET)
   public Long fetchAverageWaitTime() {
     LOGGER.info("calculating average wait time");
     return workOrderService.calculateAverageWaitTime(now());
