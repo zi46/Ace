@@ -17,7 +17,7 @@ was added to the queue.
 ```
 POST   /v3/priorityQueue/add
 content-type: application/json
-Request: Order id to be added. eg. 10
+RequestBody: Order id to be added. eg. 10
 ```
 
 Remove end point: <br></br>
@@ -58,7 +58,7 @@ the position of the ID in the queue indexed from 0.
 ```
 POST  /v3/priorityQueue/locate/orderId
 content-type: application/json
-Request: orderid to get the position. eg. 10
+RequestBody: orderid to get the position. eg. 10
 ```
 
 Average wait time end point: <br></br>
