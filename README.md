@@ -16,7 +16,8 @@ accept two parameters, the ID to enqueue and the time at which the ID
 was added to the queue. 
 ```
 POST   /v3/priorityQueue/add
-Request: Order id to be added
+content-type: application/json
+Request: Order id to be added. eg. 10
 ```
 
 Remove end point: <br></br>
@@ -26,6 +27,7 @@ it was entered into the queue.
 
 ```
 GET   /v3/priorityQueue/remove
+content-type: application/json
 
 ```
 
@@ -35,6 +37,7 @@ return a list of IDs sorted from highest ranked to lowest.
 
 ```
 GET  /v3/priorityQueue/fetch/orderIds
+content-type: application/json
 ```
 
 Remove particular order id: <br></br>
@@ -43,7 +46,8 @@ should accept a single parameter, the ID to remove.
 
 ```
 POST  /v3/priorityQueue/remove/orderId
-Request: orderid to be removed
+content-type: application/json
+RequestBody: orderid to be removed. eg. 10
 ```
 
 Get the position of orderid: <br></br>
@@ -53,7 +57,8 @@ the position of the ID in the queue indexed from 0.
 
 ```
 POST  /v3/priorityQueue/locate/orderId
-Request: orderid to get the position
+content-type: application/json
+Request: orderid to get the position. eg. 10
 ```
 
 Average wait time end point: <br></br>
@@ -63,4 +68,5 @@ number of seconds that each ID has been waiting in the queue.
 
 ```
 GET   /v3/priorityQueue/averageWaitTime
+content-type: application/json
 ```
