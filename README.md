@@ -1,12 +1,17 @@
 # Ace
 Priority queue
 
-# Steps to build and run
+# Steps to build and run in IDE
 - Clone the git repo in any IDE
 - Download maven dependancies and update the project
 - Run the project
-- Hit the end points through fiddler
+- Hit the end points through fiddler  or any debugging proxy server.
 
+# Steps to build and run as service
+- Clone the git repo
+- go to command prompt and run the command ```mvn clean install```
+- from command promt, go to path where jar is formed and run command ``` java -jar <jar-name>.jar```
+- Hit the end points through fiddler or any debugging proxy server. Endpoints can also be hit with curl command if required to run through command prompt
 
 # Endpoints
 
